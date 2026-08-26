@@ -24,3 +24,5 @@ Proyek ini merupakan repository awal untuk tugas mata kuliah Pemrograman Web men
 
 ## URL Lokal
 [http://localhost/pemweb-obe/](http://localhost/pemweb-obe/)
+
+* Status: Selesai dikerjakan*
