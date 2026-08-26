@@ -1,0 +1,5 @@
+# Log Penggunaan AI
+
+| Tanggal | Tujuan Penggunaan AI | Prompt Ringkas | Hasil | Verifikasi | Keputusan Mahasiswa |
+|---|---|---|---|---|---|
+| 26 Agustus 2026 | Meminta bantuan untuk memahami urutan langkah praktikum Modul 1 secara bertahap dan mengatasi kendala Git di terminal. | "tolong ajarin aku pelan pelan gimana cara kerjain langkah praktikum dong step by step dari nomor 1" | AI memberikan panduan langkah demi langkah cara menggunakan Git di VS Code, termasuk cara mengatasi error "Author identity unknown" saat mencoba commit. | Saya mempraktikkan instruksi tersebut di terminal VS Code. Setelah dicek, server berjalan normal dan file index.html berhasil terunggah ke repository GitHub saya. | Karena penjelasannya cukup mudah dipahami, saya memutuskan untuk menggunakan panduan AI tersebut guna menyelesaikan error yang muncul dan menyelesaikan langkah praktikum ini. |
