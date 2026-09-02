@@ -1,28 +1,11 @@
-# Praktikum Pemrograman Web - MODUL 1
+# SIPENSTOK UMKM
+Sistem Informasi Pendataan Produk dan Stok UMKM.
 
-## Identitas Mata Kuliah
-* Nama          : Novi Santika Pratiwi
-* NPM           : 2440304019
-* MK            : Pemrograman Web
-* Program Studi : Teknik Komputer 
+## Cara Menjalankan
+1. Nyalakan Laragon 5 (pastikan Apache aktif dan XAMPP mati).
+2. Buka browser dan akses: `http://localhost/pemweb-obe/index.html`
 
-## Deskripsi Singkat Proyek
-Proyek ini merupakan repository awal untuk tugas mata kuliah Pemrograman Web menggunakan pendekatan kurikulum Outcome-Based Education (OBE). Proyek ini dibuat untuk memahami cara kerja web, pengamatan request-response HTTP melalui browser, dan implementasi version control menggunakan Git dan GitHub.
-
-## Teknologi yang Digunakan
-* HTML5 Dasar
-* Git & GitHub
-* Local Web Server: Apache (melalui Laragon 5)
-* PHP 8.4 
-
-## Cara Menjalankan Proyek
-1. Instal aplikasi Laragon 5 dan pastikan aplikasi berjalan di komputer.
-2. Buka Laragon 5 lalu klik tombol Start All untuk menghidupkan server Apache.
-3. Simpan folder proyek ini di dalam direktori `C:\laragon\www\pemweb-obe`.
-4. Buka web browser (seperti Chrome atau Edge).
-5. Akses halaman proyek melalui URL lokal yang tertera di bawah.
-
-## URL Lokal
-[http://localhost/pemweb-obe/](http://localhost/pemweb-obe/)
-
-* Status: Selesai dikerjakan*
+## Fitur Selesai
+- Struktur HTML5 semantik (header, nav, main, section, article, footer).
+- Heirarki heading logis (h1 sampai h3).
+- Form kontak dengan label aksesibel yang terikat input.
