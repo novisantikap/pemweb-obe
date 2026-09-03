@@ -7,12 +7,12 @@
 </head>
 <body>
 
-    <!-- ========================================== -->
     <!-- 1. BAGIAN HEADER & NAVIGASI -->
-    <!-- ========================================== -->
     <header>
+        <!-- Aksesibilitas: Skip Link -->
         <a href="#main-content" style="position: absolute; left: -9999px;">Lewati ke konten utama</a>
         
+        <!-- Logo & Judul -->
         <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 10px;">
             <img src="logo bss.png" alt="Logo Bakpao Suka-Suka" width="70" onerror="this.style.display='none'">
             <div>
@@ -21,6 +21,7 @@
             </div>
         </div>
         
+        <!-- Menu Navigasi (<nav>) -->
         <nav aria-label="Navigasi Utama">
             <ul>
                 <li><a href="#katalog">Menu</a></li>
@@ -32,9 +33,8 @@
         </nav>
     </header>
 
-    <!-- ========================================== -->
+
     <!-- 2. BAGIAN KONTEN UTAMA (<main>) -->
-    <!-- ========================================== -->
     <main id="main-content">
 
         <!-- Section 1: Katalog Menu & Article -->
@@ -76,7 +76,62 @@
             <p>Bakpao Suka-Suka juga tersedia dan bisa dikunjungi di: Kabupaten Berau, Kota Samarinda, Kota Balikpapan, dan Kabupaten Malinau.</p>
         </section>
 
+        <!-- Section 3: Social Media Resmi -->
+        <section id="social">
+            <h2>Social Media Resmi</h2>
+            <p>Ikuti informasi dan update promo kami melalui akun media sosial resmi:</p>
+            <ul>
+                <li><strong>Tarakan:</strong> @bakpaosukasuka</li>
+                <li><strong>Balikpapan (Bpp):</strong> @bakpao.sukasuka</li>
+                <li><strong>Malinau:</strong> @bakpaosukasukamalinau</li>
+                <li><strong>Samarinda:</strong> bakpaosukasukasamarinda</li>
+                <li><strong>Berau:</strong> @bakpao_sukasuka</li>
+            </ul>
+        </section>
+
+        <!-- Section 4: FAQ (Frequently Asked Questions) -->
+        <section id="faq">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            <details>
+                <summary><strong>Bagaimana Cara Order & Pemesanan?</strong></summary>
+                <p>Anda bisa datang langsung ke outlet terdekat atau memesan secara online melalui aplikasi layanan antar Grab.</p>
+            </details>
+            <details>
+                <summary><strong>Apa saja Metode Pembayaran yang Tersedia?</strong></summary>
+                <p>Kami melayani pembayaran secara tunai (cash) di outlet langsung maupun pembayaran digital melalui aplikasi pemesanan online.</p>
+            </details>
+            <details>
+                <summary><strong>Apakah bisa dipesan via Grab?</strong></summary>
+                <p>Ya! Bakpao Suka-Suka sudah terdaftar dan bisa dipesan melalui layanan GrabFood.</p>
+            </details>
+        </section>
+
+        <!-- Section 5: Formulir Pemesanan (<form>) -->
+        <section id="kontak">
+            <h2>Formulir Cek Stok & Pendataan Pickup</h2>
+            <form>
+                <label for="nama-pelanggan">Nama Lengkap:</label><br>
+                <input type="text" id="nama-pelanggan" name="nama" required placeholder="Masukkan nama Anda"><br><br>
+
+                <label for="pilihan-menu">Pilih Varian:</label><br>
+                <select id="pilihan-menu" name="menu">
+                    <option value="ayam">Ayam Spesial (Rp8.000)</option>
+                    <option value="cokelat">Cokelat (Rp6.000)</option>
+                    <option value="kacang-tanah">Kacang Tanah (Rp6.000)</option>
+                    <option value="kacang-hijau">Kacang Hijau (Rp6.000)</option>
+                </select><br><br>
+                
+                <button type="submit">Kirim Pesanan</button>
+            </form>
+        </section>
+
     </main>
+
+
+    <!-- 3. BAGIAN FOOTER -->
+    <footer>
+        <p>&copy; 2026 SIPENSTOK UMKM - Bakpao Suka-Suka. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
