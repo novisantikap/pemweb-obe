@@ -3,67 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SIPENSTOK UMKM - Sistem Informasi Pendataan Produk dan Stok Bakpao Suka-Suka Kampung 4 Tarakan">
-    <title>SIPENSTOK UMKM - Bakpao Suka-Suka Kampung 4</title>
+    <title>SIPENSTOK UMKM - Bakpao Suka-Suka</title>
 </head>
 <body>
 
-    <!-- Header & Navigasi Utama -->
+    <!-- 1. Navigasi & Checklist Aksesibilitas Dasar (Skip Link) -->
     <header>
-        <!-- Aksesibilitas: Skip Link -->
-        <a href="#main" style="position: absolute; left: -9999px;">Lewati ke konten utama</a>
+        <a href="#main-content" style="position: absolute; left: -9999px;">Lewati ke konten utama</a>
         
         <h1>SIPENSTOK UMKM</h1>
-        <p>Sistem Informasi Pendataan Produk & Stok - Bakpao Suka-Suka (Kampung 4 Tarakan)</p>
+        <p>Bakpao Suka-Suka Kampung 4 Tarakan</p>
         
-        <nav aria-label="Navigasi Utama">
-            <a href="#katalog">Katalog Menu</a> | 
-            <a href="#stok">Cek Stok</a> | 
-            <a href="#cabang">Cabang Lain</a> | 
-            <a href="#kontak">Pesan Pickup</a>
+        <nav>
+            <ul>
+                <li><a href="#sec-beranda">Beranda</a></li>
+                <li><a href="#sec-katalog">Katalog</a></li>
+                <li><a href="#sec-kontak">Kontak</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Konten Utama (Memuat Section & Article) -->
-    <main id="main">
+    <!-- 2. Konten Utama -->
+    <main id="main-content">
 
-        <!-- Section 1: Katalog Menu -->
-        <section id="katalog">
-            <h2>Katalog Menu Unggulan</h2>
+        <!-- 3. Section 1 -->
+        <section id="sec-beranda">
+            <h2>Beranda Proyek</h2>
+            <p>Sistem pendataan produk dan stok awal untuk proyek individu.</p>
+        </section>
+
+        <!-- 3. Section 2 & 4. Minimal 1 Article -->
+        <section id="sec-katalog">
+            <h2>Katalog Produk</h2>
             <article>
-                <h3>Varian Rasa & Harga</h3>
-                <p>Kami menyediakan varian favorit seperti Ayam Spesial (Rp8.000), serta Cokelat, Kacang Tanah, dan Kacang Hijau (masing-masing Rp6.000).</p>
+                <h3>Informasi Varian Bakpao</h3>
+                <p>Menampilkan rincian menu dan ketersediaan stok harian.</p>
             </article>
         </section>
 
-        <!-- Section 2: Manajemen Stok -->
-        <section id="stok">
-            <h2>Status Ketersediaan Stok</h2>
-            <p>Karena tingginya minat pembeli, produk sering kali habis pada pukul 09:00 - 10:00 WITA. Pantau stok harian di sini sebelum berkunjung ke gerai Kampung 4.</p>
-        </section>
-
-        <!-- Section 3: Jaringan Cabang -->
-        <section id="cabang">
-            <h2>Informasi Jaringan Cabang</h2>
-            <p>Selain di Kampung 4 Tarakan, Bakpao Suka-Suka juga memiliki jaringan cabang di Berau, Samarinda, dan Balikpapan.</p>
-        </section>
-
-        <!-- Form Pemesanan / Kontak -->
-        <section id="kontak">
-            <h2>Formulir Cek Stok & Pickup</h2>
+        <!-- 3. Section 3 & 5. Satu Form + 8. Aksesibilitas Label -->
+        <section id="sec-kontak">
+            <h2>Formulir Pendataan</h2>
             <form>
-                <label for="email-pelanggan">Email / No WhatsApp:</label><br>
-                <input type="text" id="email-pelanggan" name="kontak" required placeholder="Masukkan kontak aktif"><br><br>
+                <label for="input-nama">Nama Pelanggan:</label><br>
+                <input type="text" id="input-nama" name="nama" required><br><br>
                 
-                <button type="submit">Kirim Permintaan</button>
+                <button type="submit">Kirim Data</button>
             </form>
         </section>
 
     </main>
 
-    <!-- Footer -->
+    <!-- 6. Footer -->
     <footer>
-        <p>&copy; 2026 SIPENSTOK UMKM - Bakpao Suka-Suka Kampung 4 Tarakan</p>
+        <p>&copy; 2026 SIPENSTOK UMKM</p>
     </footer>
 
 </body>
