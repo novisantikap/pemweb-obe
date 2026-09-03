@@ -7,21 +7,21 @@
 </head>
 <body>
 
-    <!-- Header dengan Logo & Navigasi Lengkap -->
+    <!-- 1. BAGIAN HEADER & NAVIGASI -->
     <header>
-        <!-- Aksesibilitas: Skip link -->
+        <!-- Aksesibilitas: Skip Link -->
         <a href="#main-content" style="position: absolute; left: -9999px;">Lewati ke konten utama</a>
         
-        <!-- Logo UMKM (Pastikan ada file logo.png di folder proyekmu, atau diganti teks) -->
-        <div style="display: flex; align-items: center; gap: 10px;">
-            <img src="logo.png" alt="Logo Bakpao Suka-Suka" width="60" onerror="this.style.display='none'">
+        <!-- Logo & Judul -->
+        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 10px;">
+            <img src="logo bss.png" alt="Logo Bakpao Suka-Suka" width="70" onerror="this.style.display='none'">
             <div>
                 <h1>SIPENSTOK UMKM</h1>
                 <p>Bakpao Suka-Suka Cabang Utama Kampung 4 Tarakan</p>
             </div>
         </div>
-
-        <!-- Menu Navigasi ala Web Profesional -->
+        
+        <!-- Menu Navigasi (<nav>) -->
         <nav aria-label="Navigasi Utama">
             <ul>
                 <li><a href="#katalog">Menu</a></li>
@@ -33,10 +33,10 @@
         </nav>
     </header>
 
-    <!-- Konten Utama (Memenuhi syarat minimal 3 section & 1 article) -->
+    <!-- 2. BAGIAN KONTEN UTAMA (<main>) -->
     <main id="main-content">
 
-        <!-- Section 1: Katalog Menu Varian Bakpao -->
+        <!-- Section 1: Katalog Menu & Article -->
         <section id="katalog">
             <h2>Katalog Menu & Produk</h2>
             <article>
@@ -51,86 +51,7 @@
             </article>
         </section>
 
-        <!-- Section 2: Store / Jaringan Cabang (Tarakan & Luar Kota) -->
-        <section id="store">
-            <h2>Lokasi Store & Jaringan Cabang</h2>
-            
-            <h3>Cabang Khusus Wilayah Tarakan</h3>
-            <p>Temukan outlet kami terdekat di kotamu:</p>
-            <ul>
-                <li><strong>Cabang Utama:</strong> Jl. Gajah Mada / Kampung 4 (Pusat)</li>
-                <li>Kampung 6</li>
-                <li>Kampung Bugis</li>
-                <li>Kampung 1</li>
-                <li>Markoni</li>
-                <li>Lingkas</li>
-                <li>Sebengkok</li>
-            </ul>
-
-            <h3>Cabang Luar Kota</h3>
-            <p>Bakpao Suka-Suka juga tersedia dan bisa dikunjungi di:</p>
-            <ul>
-                <li>Kabupaten Berau</li>
-                <li>Kota Samarinda</li>
-                <li>Kota Balikpapan</li>
-                <li>Kabupaten Malinau</li>
-            </ul>
-        </section>
-
-        <!-- Section 3: Social Media & FAQ (Gabungan atau Tambahan Section) -->
-        <section id="social">
-            <h2>Media Sosial Resmi</h2>
-            <p>Ikuti perkembangan info dan promo menarik kami di:</p>
-            <ul>
-                <li><strong>Tarakan:</strong> @bakpaosukasuka_tarakan</li>
-                <li><strong>Berau:</strong> @bakpaosukasuka_berau</li>
-                <li><strong>Samarinda:</strong> @bakpaosukasuka_samarinda</li>
-                <li><strong>Balikpapan:</strong> @bakpaosukasuka_bpp</li>
-                <li><strong>Malinau:</strong> @bakpaosukasuka_malinau</li>
-            </ul>
-        </section>
-
-        <section id="faq">
-            <h2>Frequently Asked Questions (FAQ)</h2>
-            <details>
-                <summary><strong>Apakah Bakpao Suka-Suka halal?</strong></summary>
-                <p>Ya, seluruh produk kami dibuat menggunakan bahan-bahan pilihan yang halal dan berkualitas.</p>
-            </details>
-            <details>
-                <summary><strong>Kenapa produk sering cepat habis sebelum siang?</strong></summary>
-                <p>Karena produk dibuat *fresh* setiap subuh dalam jumlah terbatas dan tingginya pesanan langsung maupun via ojek online.</p>
-            </details>
-            <details>
-                <summary><strong>Apakah bisa dipesan lewat aplikasi online?</strong></summary>
-                <p>Bisa, kami juga tersedia di platform layanan pesan-antar makanan online seperti GrabFood.</p>
-            </details>
-        </section>
-
-        <!-- Form Pemesanan / Kontak (Memenuhi syarat minimal 1 form dengan label) -->
-        <section id="kontak">
-            <h2>Formulir Cek Stok & Pendataan Pickup</h2>
-            <form>
-                <label for="nama-pelanggan">Nama Lengkap:</label><br>
-                <input type="text" id="nama-pelanggan" name="nama" required placeholder="Masukkan nama Anda"><br><br>
-
-                <label for="pilihan-menu">Pilih Varian:</label><br>
-                <select id="pilihan-menu" name="menu">
-                    <option value="ayam">Ayam Spesial (Rp8.000)</option>
-                    <option value="cokelat">Cokelat (Rp6.000)</option>
-                    <option value="kacang-tanah">Kacang Tanah (Rp6.000)</option>
-                    <option value="kacang-hijau">Kacang Hijau (Rp6.000)</option>
-                </select><br><br>
-                
-                <button type="submit">Kirim Pesanan</button>
-            </form>
-        </section>
-
     </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 SIPENSTOK UMKM - Bakpao Suka-Suka. All Rights Reserved.</p>
-    </footer>
 
 </body>
 </html>
