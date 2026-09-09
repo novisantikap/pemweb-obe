@@ -4,86 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIPENSTOK UMKM - Bakpao Suka-Suka</title>
+    <!-- Langkah Praktikum 1: Hubungkan CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- 1. BAGIAN HEADER & NAVIGASI -->
-    <header>
-        <!-- Aksesibilitas: Skip Link -->
-        <a href="#main-content" style="position: absolute; left: -9999px;">Lewati ke konten utama</a>
-        
-        <!-- Logo & Judul -->
-        <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 10px;">
-            <img src="logo bss.png" alt="Logo Bakpao Suka-Suka" width="70" onerror="this.style.display='none'">
-            <div>
-                <h1>SIPENSTOK UMKM</h1>
-                <p>Bakpao Suka-Suka Cabang Utama Kampung 4 Tarakan</p>
+    <!-- Skip Link Aksesibilitas -->
+    <a href="#main-content" class="skip-link">Lewati ke konten utama</a>
+
+    <!-- 1. HEADER & NAVIGASI FLEXBOX -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="brand-logo">
+                <img src="logo bss.png" alt="Logo Bakpao Suka-Suka" width="50" onerror="this.style.display='none'">
+                <div class="brand-title">
+                    <h1>SIPENSTOK UMKM</h1>
+                    <p>Bakpao Suka-Suka Kampung 4 Tarakan</p>
+                </div>
             </div>
+            <nav aria-label="Navigasi Utama">
+                <ul class="nav-links">
+                    <li><a href="#katalog">Menu</a></li>
+                    <li><a href="#store">Store / Cabang</a></li>
+                    <li><a href="#social">Social Media</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#kontak">Pemesanan / Kontak</a></li>
+                </ul>
+            </nav>
         </div>
-        
-        <!-- Menu Navigasi (<nav>) -->
-        <nav aria-label="Navigasi Utama">
-            <ul>
-                <li><a href="#katalog">Menu</a></li>
-                <li><a href="#store">Store / Cabang</a></li>
-                <li><a href="#social">Social Media</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#kontak">Pemesanan / Kontak</a></li>
-            </ul>
-        </nav>
     </header>
 
+    <!-- KONTEN UTAMA -->
+    <main id="main-content" class="container">
 
-    <!-- 2. BAGIAN KONTEN UTAMA (<main>) -->
-    <main id="main-content">
+        <!-- 2. KATALOG MENU & PENDATAAN STOK -->
+        <section id="katalog" class="section-padding">
+            <h2>Katalog Menu & Pendataan Stok</h2>
+            <p class="subtitle">Update stok harian cabang utama Kampung 4 Tarakan</p>
 
-        <!-- Section 1: Katalog Menu & Article -->
-        <section id="katalog">
-            <h2>Katalog Menu & Produk</h2>
+            <div class="cards">
+                <!-- Menu 1: Bakpao Ayam -->
+                <article class="card">
+                    <img src="bakpao-ayam.png"Bakpao Ayam Spesial" class="card-img">
+                    <div class="card-body">
+                        <h3>Ayam Spesial</h3>
+                        <p class="price">Rp8.000</p>
+                        <span class="badge badge-warning">Sisa Stok: 12 Pcs</span>
+                    </div>
+                </article>
 
-            <!-- Tambahan Foto Produk Bakpao -->
-            <div style="margin: 15px 0;">
-                <img src="logo bss.png" alt="Foto Produk Bakpao Suka-Suka" width="300" style="border-radius: 8px;" onerror="this.style.display='none'">
+                <!-- Menu 2: Bakpao Kacang Hijau -->
+                <article class="card">
+                    <img src="bakpao-kacang-hijau.png" alt="Bakpao Kacang Hijau" class="card-img">
+                    <div class="card-body">
+                        <h3>Kacang Hijau</h3>
+                        <p class="price">Rp6.000</p>
+                        <span class="badge badge-success">Sisa Stok: 18 Pcs</span>
+                    </div>
+                </article>
+
+                <!-- Menu 3: Bakpao Cokelat -->
+                <article class="card">
+                    <img src="bakpao-cokelat.png" alt="Bakpao Cokelat" class="card-img">
+                    <div class="card-body">
+                        <h3>Cokelat Lumer</h3>
+                        <p class="price">Rp6.000</p>
+                        <span class="badge badge-success">Sisa Stok: 25 Pcs</span>
+                    </div>
+                </article>
+
+                <!-- Menu 4: Bakpao Kacang Tanah -->
+                <article class="card">
+                    <img src="bakpao-kacang-tanah.png" alt="Bakpao Kacang Tanah" class="card-img">
+                    <div class="card-body">
+                        <h3>Kacang Tanah</h3>
+                        <p class="price">Rp6.000</p>
+                        <span class="badge badge-danger">Sisa Stok: 4 Pcs (Hampir Habis)</span>
+                    </div>
+                </article>
             </div>
-
-            <article>
-                <h3>Varian Rasa Favorit</h3>
-                <ul>
-                    <li><strong>Ayam Spesial:</strong> Rp8.000 (Renyah & Gurih)</li>
-                    <li><strong>Cokelat:</strong> Rp6.000 (Lumer di mulut)</li>
-                    <li><strong>Kacang Tanah:</strong> Rp6.000 (Manis & Gurih)</li>
-                    <li><strong>Kacang Hijau:</strong> Rp6.000 (Lembut & Tradisional)</li>
-                </ul>
-                <p><em>Catatan: Karena tingginya permintaan, produk sering habis pukul 09:00 - 10:00 WITA.</em></p>
-            </article>
         </section>
 
-        <!-- Section 2: Store / Jaringan Cabang -->
-        <section id="store">
+        <!-- 3. LOKASI STORE & JARINGAN CABANG -->
+        <section id="store" class="section-padding">
             <h2>Lokasi Store & Jaringan Cabang</h2>
-            
-            <h3>Cabang Khusus Wilayah Tarakan</h3>
-            <p>Temukan outlet kami terdekat di kotamu:</p>
-            <ul>
-                <li><strong>Kampung 4 (Utama - Pusat Projek):</strong> Lokasi utama pendataan.</li>
-                <li>613 (Depan Alfamidi)</li>
-                <li>Jl. Gajah Mada</li>
-                <li>Kampung Bugis</li>
-                <li>Beringin</li>
-                <li>Sebengkok</li>
-                <li>Lingkas</li>
-                <li>Kampung 1</li>
-                <li>Kampung 6</li>
-                <li>Karang Anyar (Tersedia sesi Pagi & Siang)</li>
-                <li>Juata</li>
-            </ul>
+            <div class="store-box">
+                <h3>Cabang Khusus Wilayah Tarakan</h3>
+                <p>Temukan outlet kami terdekat di kotamu:</p>
+                <ul>
+                    <li><strong>Kampung 4:</strong> Lokasi utama.</li>
+                    <li>613 (Depan Alfamidi)</li>
+                    <li>Jl. Gajah Mada</li>
+                    <li>Kampung Bugis</li>
+                    <li>Beringin</li>
+                    <li>Sebengkok</li>
+                    <li>Lingkas</li>
+                    <li>Kampung 1</li>
+                    <li>Kampung 6</li>
+                    <li>Karang Anyar (Tersedia sesi Pagi & Siang)</li>
+                    <li>Juata</li>
+                </ul>
 
-            <h3>Cabang Luar Kota</h3>
-            <p>Bakpao Suka-Suka juga tersedia dan bisa dikunjungi di: Kabupaten Berau, Kota Samarinda, Kota Balikpapan, dan Kabupaten Malinau.</p>
+                <h3 style="margin-top: 1.5rem;">Cabang Luar Kota</h3>
+                <p>Bakpao Suka-Suka juga tersedia dan bisa dikunjungi di: Kabupaten Berau, Kota Samarinda, Kota Balikpapan, dan Kabupaten Malinau.</p>
+            </div>
         </section>
 
-        <!-- Section 3: Social Media Resmi -->
-        <section id="social">
+        <!-- 4. SOCIAL MEDIA & FAQ -->
+        <section id="social" class="section-padding">
             <h2>Social Media Resmi</h2>
             <p>Ikuti informasi dan update promo kami melalui akun media sosial resmi:</p>
             <ul>
@@ -95,48 +123,55 @@
             </ul>
         </section>
 
-        <!-- Section 4: FAQ (Frequently Asked Questions) -->
-        <section id="faq">
+        <section id="faq" class="section-padding">
             <h2>Frequently Asked Questions (FAQ)</h2>
-            <details>
+            
+            <details class="faq-item">
                 <summary><strong>Bagaimana Cara Order & Pemesanan?</strong></summary>
-                <p>Anda bisa datang langsung ke outlet terdekat atau memesan secara online melalui aplikasi layanan antar Grab.</p>
+                <p>Silakan klik tombol WhatsApp di bawah untuk meminta admin menyimpankan stok.</p>
             </details>
-            <details>
+
+            <details class="faq-item">
                 <summary><strong>Apa saja Metode Pembayaran yang Tersedia?</strong></summary>
-                <p>Kami melayani pembayaran secara tunai (cash) di outlet langsung maupun pembayaran digital melalui aplikasi pemesanan online.</p>
+                <p>Pembayaran bisa dilakukan tunai atau via QRIS.</p>
             </details>
-            <details>
+
+            <details class="faq-item">
                 <summary><strong>Apakah bisa dipesan via Grab?</strong></summary>
-                <p>Ya! Bakpao Suka-Suka sudah terdaftar dan bisa dipesan melalui layanan GrabFood.</p>
+                <p>Pengambilan bisa langsung ke booth Kampung 4 atau dikirim menggunakan kurir Grab.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary><strong>Bagaimana cara minta simpan stok bakpao?</strong></summary>
+                <p>Silakan hubungi WhatsApp resmi kami untuk mengamankan varian rasa favoritmu.</p>
             </details>
         </section>
 
-        <!-- Section 5: Formulir Pemesanan (<form>) -->
-        <section id="kontak">
-            <h2>Formulir Cek Stok & Pendataan Pickup</h2>
-            <form>
-                <label for="nama-pelanggan">Nama Lengkap:</label><br>
-                <input type="text" id="nama-pelanggan" name="nama" required placeholder="Masukkan nama Anda"><br><br>
+        <!-- 5. PEMESANAN / KONTAK & TOMBOL WHATSAPP (NOMOR BARU) -->
+        <section id="kontak" class="section-padding">
+            <h2>Pemesanan & Simpan Stok</h2>
 
-                <label for="pilihan-menu">Pilih Varian:</label><br>
-                <select id="pilihan-menu" name="menu">
-                    <option value="ayam">Ayam Spesial (Rp8.000)</option>
-                    <option value="cokelat">Cokelat (Rp6.000)</option>
-                    <option value="kacang-tanah">Kacang Tanah (Rp6.000)</option>
-                    <option value="kacang-hijau">Kacang Hijau (Rp6.000)</option>
-                </select><br><br>
-                
-                <button type="submit">Kirim Pesanan</button>
-            </form>
+            <div class="alert-box">
+                <div class="alert-icon">⚠️</div>
+                <div class="alert-content">
+                    <strong>PERINGATAN:</strong>
+                    <p>Karena stok harian sering habis di jam 09:00 - 10:00 WITA, pemesanan dan permintaan simpan stok dilakukan sebelum jam tersebut via WhatsApp.</p>
+            </div>
+
+            <div class="whatsapp-wrapper">
+                <a href="https://wa.me/6281253557345?text=Halo%20Admin%20Bakpao%20Suka-Suka,%20saya%20mau%20minta%20simpankan%20stok%20bakpao" target="_blank" class="btn-whatsapp">
+                    <span class="wa-icon">💬</span> Kirim Order via WhatsApp
+                </a>
+            </div>
         </section>
 
     </main>
 
-
-    <!-- 3. BAGIAN FOOTER -->
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 SIPENSTOK UMKM - Bakpao Suka-Suka. All Rights Reserved.</p>
+        <div class="container text-center">
+            <p>&copy; 2026 SIPENSTOK UMKM - Bakpao Suka-Suka. All Rights Reserved.</p>
+        </div>
     </footer>
 
 </body>

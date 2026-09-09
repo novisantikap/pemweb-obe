@@ -1,27 +1,25 @@
-# SIPENSTOK UMKM - Sistem Informasi Pendataan Produk dan Stok
-## Tugas 2: Struktur Halaman Proyek Individu
+# SIPENSTOK UMKM - Bakpao Suka-Suka
 
-* **Nama:** Novi Santika Pratiwi
-* **NPM:** 2440304019
-* **Mata Kuliah:** Pemrograman Web
-* **Studi Kasus:** UMKM Bakpao Suka-Suka Cabang Kampung 4 Tarakan
+Proyek web responsif berbasis lokal (*Laragon server*) yang dikembangkan untuk memenuhi tugas Praktikum Pemrograman Web (Kurikulum OBE). Website ini dirancang khusus untuk membantu UMKM lokal (Bakpao Suka-Suka Kampung 4 Tarakan) dalam memantau stok harian dan mempermudah pelanggan melakukan pemesanan langsung via WhatsApp.
 
----
+## 👤 Informasi Mahasiswa
+- **Nama:** Novi Santika Pratiwi
+- **NPM:** 2440304019
+- **Mata Kuliah:** Pemrograman Web (26TJ453127)
+- **Program Studi:** Sarjana Teknik Komputer
+- **Fakultas Teknik - Universitas Borneo Tarakan**
+- **Tahun:** 2026
 
-### **Deskripsi Proyek**
-Proyek ini dibangun sebagai implementasi kerangka web untuk studi kasus UMKM **Bakpao Suka-Suka** Cabang Utama Kampung 4 Tarakan, lengkap dengan jaringan cabang, media sosial, FAQ, dan form interaktif.
+## 🚀 Fitur & Implementasi Teknis (Modul 3)
+1. **HTML5 Semantic & Struktur Modern:** Menggunakan elemen semantik seperti `<header>`, `<main>`, `<section>`, dan `<footer>`.
+2. **CSS Custom Properties (`:root`):** Penggunaan variabel warna palet, *spacing*, dan *radius* agar kodingan lebih rapi dan mudah dikelola.
+3. **Flexbox & CSS Grid:** 
+   - Navigasi menggunakan **Flexbox** dengan fitur `flex-wrap: wrap` agar responsif tanpa *horizontal scroll*.
+   - Katalog produk menggunakan **CSS Grid** (`auto-fit` dan `minmax`) untuk pengaturan tata letak 1 kolom pada perangkat *mobile* hingga 3-4 kolom pada layar *desktop*.
+4. **Responsive Design & Satuan CSS:** Menggabungkan berbagai perbandingan satuan ukuran CSS (`px`, `rem`, `%`, `fr`, dan `clamp()`) serta penerapan *Media Queries* berbasis kebutuhan konten.
+5. **Aksesibilitas (Accessibility):** Dilengkapi dengan *Skip Link* dan fokus state (`:focus-visible`) untuk keterbacaan serta navigasi keyboard yang optimal.
+6. **Integrasi Bisnis:** Tombol aksi interaktif langsung terhubung ke layanan WhatsApp pemesanan toko.
 
-### **Fitur & Struktur HTML Semantik:**
-- **Header & Navigasi (`<header>` & `<nav>`):** Dilengkapi logo UMKM (`logo bss.png`) serta menu navigasi utama.
-- **Konten Utama (`<main>`):** Memuat lebih dari tiga bagian section dan satu article.
-- **Katalog Produk:** Menampilkan informasi varian rasa bakpao favorit dan catatan stok.
-- **Store / Jaringan Cabang:** Informasi outlet wilayah Tarakan (Kp. 4, 613 Alfamidi, Gajah Mada, dll.) serta cabang luar kota (Berau, Samarinda, Balikpapan, Malinau).
-- **Social Media:** Daftar akun resmi masing-masing cabang.
-- **FAQ:** Informasi seputar cara order, metode pembayaran, dan ketersediaan di GrabFood.
-- **Formulir Kontak/Pickup (`<form>`):** Formulir interaktif dengan label aksesibilitas dasar.
-- **Footer (`<footer>`):** Hak cipta proyek (Copyright 2026).
-
-### **Git Workflow:**
-- Menggunakan branch `feature/struktur-home`.
-- Catatan riwayat *commit* bertahap yang bermakna.
-- *Merge* ke branch `main`.
+## 🛠️ Lingkungan Pengembangan (Environment)
+- **Local Server:** Laragon 5 (`localhost/pemweb-obe/`)
+- **Editor:** Visual Studio Code
