@@ -126,11 +126,9 @@ body {
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-4px);
 }
 
 .card-img {
