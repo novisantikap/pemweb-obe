@@ -1,6 +1,5 @@
 # SIPENSTOK UMKM - Bakpao Suka-Suka
-
-Proyek web responsif berbasis lokal (*Laragon server*) yang dikembangkan untuk memenuhi tugas Praktikum Pemrograman Web (Kurikulum OBE). Website ini dirancang khusus untuk membantu UMKM lokal (Bakpao Suka-Suka Kampung 4 Tarakan) dalam memantau stok harian dan mempermudah pelanggan melakukan pemesanan langsung via WhatsApp.
+Repositori ini dikembangkan untuk memenuhi penugasan praktikum **Pemrograman Web**, khususnya **Modul 4: JavaScript Modern (ES6+), Modules, dan Dasar Async/Error Handling**. Proyek ini berfokus pada penerapan logika pemrograman modern untuk mendata dan mengelola inventaris stok produk kuliner UMKM lokal secara terstruktur.
 
 ## Informasi Mahasiswa
 - **Nama:** Novi Santika Pratiwi
@@ -8,16 +7,33 @@ Proyek web responsif berbasis lokal (*Laragon server*) yang dikembangkan untuk m
 - **Mata Kuliah:** Pemrograman Web 
 - **Program Studi:** Teknik Komputer
 
-## Fitur & Implementasi Teknis (Modul 3)
-1. **HTML5 Semantic & Struktur Modern:** Menggunakan elemen semantik seperti `<header>`, `<main>`, `<section>`, dan `<footer>`.
-2. **CSS Custom Properties (`:root`):** Penggunaan variabel warna palet, *spacing*, dan *radius* agar kodingan lebih rapi dan mudah dikelola.
-3. **Flexbox & CSS Grid:** 
-   - Navigasi menggunakan **Flexbox** dengan fitur `flex-wrap: wrap` agar responsif tanpa *horizontal scroll*.
-   - Katalog produk menggunakan **CSS Grid** (`auto-fit` dan `minmax`) untuk pengaturan tata letak 1 kolom pada perangkat *mobile* hingga 3-4 kolom pada layar *desktop*.
-4. **Responsive Design & Satuan CSS:** Menggabungkan berbagai perbandingan satuan ukuran CSS (`px`, `rem`, `%`, `fr`, dan `clamp()`) serta penerapan *Media Queries* berbasis kebutuhan konten.
-5. **Aksesibilitas (Accessibility):** Dilengkapi dengan *Skip Link* dan fokus state (`:focus-visible`) untuk keterbacaan serta navigasi keyboard yang optimal.
-6. **Integrasi Bisnis:** Tombol aksi interaktif langsung terhubung ke layanan WhatsApp pemesanan toko.
+## Teknologi & Fitur yang Digunakan
+* **HTML5 & CSS3**: Struktur antarmuka web dan penataan gaya visual katalog produk.
+* **JavaScript Modern (ES6+)**:
+  * *Arrow Functions* (`=>`) untuk efisiensi penulisan fungsi.
+  * *Array Methods* (`filter`, `map`, `reduce`, `find`, `forEach`) untuk pengolahan data inventaris.
+  * *Destructuring & Template Literals* untuk penyusunan string dinamis.
+* **ES Modules (`import`/`export`)**: Pemisahan logika program modular antara berkas utama (`app.js`) dan berkas utilitas pendukung (`utils.js`).
+* **Error Handling Dasar**: Mekanisme penanganan galat menggunakan pengecekan tipe data (`Array.isArray`) dan pelemparan galat kustom (`TypeError`).
+* **Git Version Control**: Manajemen kontrol versi dan riwayat rekam jejak pengembangan kode sumber (*commit*).
 
-## Lingkungan Pengembangan (Environment)
-- **Local Server:** Laragon 5 (`localhost/pemweb-obe/`)
-- **Editor:** Visual Studio Code
+## Struktur Direktori Proyek
+```text
+pemweb-obe/
+│
+├── js/
+│   ├── app.js       # Berkas utama logika JavaScript & pemanggilan modul
+│   └── utils.js     # Berkas modul fungsi statistik stok dan error handling
+│
+├── index.html       # Berkas antarmuka utama web
+├── styles.css       # Berkas penataan gaya visual
+└── README.md        # Dokumentasi proyek
+
+
+## Cara Menjalankan Proyek
+1. Pastikan peladen lokal Laragon (Apache) sudah aktif menyala.
+2. Tempatkan direktori proyek ini ke dalam folder direktori peladen lokal (misalnya laragon/www/pemweb-obe/).
+3. Buka peramban web (browser) dan akses tautan:
+   http://localhost/pemweb-obe/
+4. Tekan F12 atau klik kanan lalu pilih Inspect, kemudian arahkan ke tab Console dan Network untuk melihat hasil eksekusi logika pengolahan data serta      verifikasi pemuatan modul JavaScript.
+
