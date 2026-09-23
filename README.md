@@ -25,3 +25,18 @@ Proyek web interaktif untuk pendataan dan manajemen stok harian **Bakpao Suka-Su
 1. Pastikan **Laragon 5** sudah terinstal dan layanan **Apache** dalam kondisi *Running*.
 2. Letakkan folder proyek di dalam direktori `C:\laragon\www\pemweb-obe\`.
 3. Buka browser dan akses melalui URL: `http://localhost/pemweb-obe/`.
+
+## 📝 Dokumentasi Alur Event & Interaksi (Tugas OBE Modul 5)
+
+Proyek ini mengimplementasikan tiga interaksi bermakna berbasis DOM dan Event:
+
+1. **Filter Kategori Stok (`click` event)**
+   - **Alur:** Pengguna mengklik tombol filter (Semua, Tersedia, Hampir Habis). *Event listener* menangkap atribut `data-filter`, lalu menyaring data array `stokBakpao` menggunakan metode `.filter()`. Fungsi `renderItems()` dipanggil untuk memperbarui tampilan kartu produk secara dinamis tanpa *reload* halaman.
+
+2. **Pencarian Menu Real-Time (`input` event)**
+   - **Alur:** Pengguna mengetik nama produk pada kotak pencarian (`#search-input`). *Event* `input` membaca ketikan secara langsung, mengubahnya ke huruf kecil, lalu mencocokkannya dengan data produk menggunakan `.includes()`. Daftar menu langsung menyaring hasil di layar secara *real-time*.
+
+3. **Ganti Tema & Web Storage (`click` event & `localStorage`)**
+   - **Alur:** Pengguna mengklik tombol ganti tema. Skrip mengubah atribut `data-theme` pada elemen HTML (Dark/Light mode) dan menyimpannya secara persisten menggunakan `localStorage.setItem()`. Saat halaman dimuat ulang (*reload*), preferensi tema dipulihkan kembali dari memori browser.
+
+   
