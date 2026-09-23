@@ -257,3 +257,60 @@ footer {
 h1, h2 {
   font-size: clamp(1.2rem, 3vw, 2rem);
 }
+
+/* ==========================================
+   TAMBAHAN MODUL 5: TOMBOL & DARK MODE
+   ========================================== */
+
+/* Styling untuk Tombol Filter dan Tombol Tema */
+.btn-filter, .btn-theme {
+  background-color: var(--surface);
+  border: 2px solid var(--brand);
+  color: var(--text);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.btn-filter:hover, .btn-theme:hover {
+  background-color: var(--brand);
+  color: #ffffff;
+  border-color: var(--brand-dark);
+}
+
+/* Efek saat tombol filter aktif atau diklik */
+.btn-filter:active, .btn-theme:active {
+  transform: scale(0.98);
+}
+
+/* Dukungan Tema Gelap (Dark Mode) untuk Web Storage Modul 5 */
+[data-theme="dark"] {
+  --surface: #1f2937;
+  --background: #111827;
+  --text: #f9fafb;
+  --brand: #f59e0b;
+  --brand-dark: #d97706;
+}
+
+[data-theme="dark"] .card {
+  border-color: #374151;
+  background-color: var(--surface);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .brand-title p,
+[data-theme="dark"] .subtitle,
+[data-theme="dark"] .alert-content p {
+  color: #9ca3af;
+}
+
+[data-theme="dark"] .store-grid,
+[data-theme="dark"] .faq-item {
+  background-color: var(--surface);
+  color: var(--text);
+  border: 1px solid #374151;
+}
+
