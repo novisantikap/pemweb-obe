@@ -133,7 +133,7 @@
             </details>
         </section>
 
-        <!-- 5. PEMESANAN / KONTAK -->
+        <!-- 5. PEMESANAN / KONTAK & MODUL 6 (FORM VALIDASI) -->
         <section id="kontak" class="section-padding">
             <h2>Pemesanan & Simpan Stok</h2>
             <div class="alert-box">
@@ -143,7 +143,59 @@
                     <p>Karena stok harian sering habis di jam 09:00 - 10:00 WITA, pemesanan dan permintaan simpan stok dilakukan sebelum jam tersebut via WhatsApp.</p>
                 </div>
             </div>
-            <div class="whatsapp-wrapper">
+            
+            <!-- FORM PEMESANAN AKSESIBEL & VALIDASI (MODUL 6) -->
+            <div style="margin-top: 2rem; padding: 1.5rem; background: var(--card-bg, #fff); border-radius: 0.5rem; border: 1px solid #ddd;">
+              <h3>Form Pemesanan Bakpao Suka-Suka</h3>
+              <form id="form-pesanan" novalidate style="display: flex; flex-direction: column; gap: 1rem; max-width: 450px; margin-top: 1rem;">
+                
+                <!-- Nama Pembeli -->
+                <div style="display: flex; flex-direction: column; gap: 0.3rem;">
+                  <label for="nama">Nama Pembeli:</label>
+                  <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap" style="padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc;">
+                  <span id="error-nama" class="error" style="color: #d9534f; font-size: 0.85rem;" aria-live="polite"></span>
+                </div>
+
+                <!-- Pilihan Menu Bakpao -->
+                <div style="display: flex; flex-direction: column; gap: 0.3rem;">
+                  <label for="menu">Pilih Menu Bakpao:</label>
+                  <select id="menu" name="menu" required style="padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc;">
+                    <option value="">-- Pilih Menu Bakpao --</option>
+                    <option value="Bakpao Ayam Spesial">Bakpao Ayam Spesial</option>
+                    <option value="Bakpao Kacang Hijau">Bakpao Kacang Hijau</option>
+                    <option value="Bakpao Cokelat">Bakpao Cokelat</option>
+                    <option value="Bakpao Kacang Tanah">Bakpao Kacang Tanah</option>
+                  </select>
+                  <span id="error-menu" class="error" style="color: #d9534f; font-size: 0.85rem;" aria-live="polite"></span>
+                </div>
+
+                <!-- Jumlah Pesanan -->
+                <div style="display: flex; flex-direction: column; gap: 0.3rem;">
+                  <label for="jumlah">Jumlah Pesanan (Pcs):</label>
+                  <input type="number" id="jumlah" name="jumlah" min="1" required placeholder="Minimal 1" style="padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc;">
+                  <span id="error-jumlah" class="error" style="color: #d9534f; font-size: 0.85rem;" aria-live="polite"></span>
+                </div>
+
+                <!-- Nomor WhatsApp -->
+                <div style="display: flex; flex-direction: column; gap: 0.3rem;">
+                  <label for="telepon">Nomor WhatsApp:</label>
+                  <input type="tel" id="telepon" name="telepon" required placeholder="Contoh: 081234567890" style="padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc;">
+                  <span id="error-telepon" class="error" style="color: #d9534f; font-size: 0.85rem;" aria-live="polite"></span>
+                </div>
+
+                <!-- Tanggal Pesanan -->
+                <div style="display: flex; flex-direction: column; gap: 0.3rem;">
+                  <label for="tanggal">Tanggal Pesanan:</label>
+                  <input type="date" id="tanggal" name="tanggal" required style="padding: 0.5rem; border-radius: 4px; border: 1px solid #ccc;">
+                  <span id="error-tanggal" class="error" style="color: #d9534f; font-size: 0.85rem;" aria-live="polite"></span>
+                </div>
+
+                <button type="submit" style="padding: 0.6rem; background: #f59e0b; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Kirim Pesanan</button>
+                <p id="form-status" aria-live="polite" style="font-weight: bold; margin-top: 0.5rem;"></p>
+              </form>
+            </div>
+
+            <div class="whatsapp-wrapper" style="margin-top: 1.5rem;">
                 <a href="https://wa.me/6281253557345?text=Halo%20Admin%20Bakpao%20Suka-Suka,%20saya%20mau%20minta%20simpankan%20stok%20bakpao" target="_blank" class="btn-whatsapp">
                     <span class="wa-icon">💬</span> Kirim Order via WhatsApp
                 </a>
