@@ -1,0 +1,6 @@
+{
+    "name": "novi/pemweb-obe",
+    "require": {
+        "vlucas/phpdotenv": "^5.7"
+    }
+}
